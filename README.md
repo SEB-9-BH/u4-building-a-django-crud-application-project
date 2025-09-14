@@ -99,7 +99,7 @@ Follow the provided project outline and reference our in-class lesson materials 
 
    urlpatterns = [
       path('admin/', admin.site.urls),
-      path('', include('my_app.urls')), # Mount the app's routes at the root URL
+      path('', include('myproject_app.urls')), # Mount the app's routes at the root URL
    ]
    ```
 
