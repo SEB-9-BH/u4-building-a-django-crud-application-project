@@ -54,10 +54,10 @@ Follow the provided project outline and reference our in-class lesson materials 
 4. **Start an application within your project directory, adjacent to the Django project you created in the last step.**
   
   ```bash
-  python3 manage.py startapp myproject__app
-  ```
+  python3 manage.py startapp myproject_app
+  ``` 
    
-6. Register your application by adding your app to the list of `INSTALLED_APPS` in `settings.py`.
+5. Register your application by adding your app to the list of `INSTALLED_APPS` in `settings.py`.
 
 ## 2. **Configure your Database**
 1. **Create Your Database**: Before adjusting the `settings.py`, ensure you create your database.
@@ -77,13 +77,19 @@ Follow the provided project outline and reference our in-class lesson materials 
    }
    ```
 
-3. **Migrate Models**: After setting up your model classes in `models.py`, make and apply migrations.
+3. **Install psycopg2-binary to connect your PostgreSQL database to your application.**
+
+  ```bash
+  pipenv install psycopg2-binary
+  ```
+
+4. **Migrate Models**: After setting up your model classes in `models.py`, make and apply migrations.
    ```bash
    python3 manage.py makemigrations
    python3 manage.py migrate
    ```
 
-4. **Start the Server**
+5. **Start the Server**
    ```bash
    python3 manage.py runserver
    ```
