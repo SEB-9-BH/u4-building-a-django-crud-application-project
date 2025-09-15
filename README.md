@@ -79,9 +79,9 @@ Follow the provided project outline and reference our in-class lesson materials 
 
 3. **Install psycopg2-binary to connect your PostgreSQL database to your application.**
 
-  ```bash
-  pipenv install psycopg2-binary
-  ```
+    ```bash
+    pipenv install psycopg2-binary
+    ```
 
 4. **Migrate Models**: After setting up your model classes in `models.py`, make and apply migrations.
    ```bash
